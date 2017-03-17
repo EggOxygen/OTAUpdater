@@ -14,4 +14,10 @@
     <string name="latest_release">Latest Release</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="sure_flash">Are you sure you want to flash this ?</string>
+    <string name="wipe_data">Wipe Data</string>
+    <string name="wipe_cache">Wipe cache</string>
+    <string name="up_found">Update Found</string>
+    <string name="clog">Changelog</string>
+    <string name="dismiss">DISMISS</string>
+    <string name="flash_bt">Flash</string>
 </resources>

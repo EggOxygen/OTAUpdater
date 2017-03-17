@@ -15,4 +15,10 @@
     <string name="something_went_wrong">看来有些地方出错了 别更新了睡觉吧</string>
     <string name="title_activity_main2"></string>
     <string name="sure_flash">确定要刷入此升级包吗?</string>
+    <string name="wipe_data">清除Data分区</string>
+    <string name="wipe_cache">清除Cache分区</string>
+    <string name="up_found">发现更新</string>
+    <string name="clog">更新日志</string>
+    <string name="dismiss">忽略</string>
+    <string name="flash_bt">确认刷入</string>
 </resources>
