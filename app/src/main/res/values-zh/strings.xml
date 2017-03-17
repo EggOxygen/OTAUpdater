@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">蛋升级</string>
+    <string name="app_name">蛋-升级</string>
     <string name="check_for_update_now">立刻检查更新</string>
     <string name="choose_app_to_open">用什么打开?</string>
     <string name="connecting_to_github">检查更新中</string>
@@ -24,4 +24,8 @@
     <string name="download_now">立即下载</string>
     <string name="changelog_release">更新日志</string>
     <string name="download_old_up">下载并安装此版本</string>
+    <string name="old_version">旧版本</string>
+    <string name="las_version">最新版本</string>
+    <string name="dev_type">开发版</string>
+    <string name="user_type">稳定版</string>
 </resources>

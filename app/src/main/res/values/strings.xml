@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EggUpdater</string>
+    <string name="app_name">Egg Updater</string>
     <string name="install">Install</string>
     <string name="choose_app_to_open">Open with?</string>
     <string name="download">Download</string>
@@ -23,4 +23,8 @@
     <string name="download_now">Download Now</string>
     <string name="changelog_release">Changelog</string>
     <string name="download_old_up">Download and Install</string>
+    <string name="old_version">Old Version</string>
+    <string name="las_version">Latest Version</string>
+    <string name="dev_type">Dev</string>
+    <string name="user_type">Release</string>
 </resources>

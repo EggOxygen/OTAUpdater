@@ -155,12 +155,12 @@ public class GithubReleasesAdapter extends GithubAdapterIDEA
 				text2.setText(release.getString("body"));
 			if(release.has("latest")==true)
 			{
-				latestRomText.setText("Latest");
+				latestRomText.setText(R.string.las_version);
 				latestRomText.setVisibility(View.VISIBLE);
 				oldRomText.setVisibility(View.GONE);
 			}
 			else {
-				oldRomText.setText("Old Build");
+				oldRomText.setText(R.string.old_version);
 				oldRomText.setVisibility(View.VISIBLE);
 			}
 
