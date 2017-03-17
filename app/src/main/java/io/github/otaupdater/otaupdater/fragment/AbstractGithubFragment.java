@@ -144,10 +144,11 @@ abstract public class AbstractGithubFragment extends ListFragment
 
                     if (!isUrlValid(mTargetURL))
                     {
-                        mTargetURL="https://raw.githubusercontent.com/Grace5921/OtaUpdater/master/updater-old-release.json";
-                        Log.e(TAG,"no url found in build.prop using default url");
+                        // Using Egg Github
+                        mTargetURL="https://raw.githubusercontent.com/EggOxygen/OTA/master/release.json";
+                        // Log.e(TAG,"no url found in build.prop using default url");
                     }
-                    Log.i(TAG,"Url = "+mTargetURL);
+                    // Log.i(TAG,"Url = "+mTargetURL);
 
                     HttpRequest httpRequest = HttpRequest.get(mTargetURL);
                     httpRequest.receive(result);

@@ -16,7 +16,7 @@ import static io.github.otaupdater.otaupdater.util.Config.updateFragment;
 
 public class MainActivity extends AppCompatActivity {
     private GithubReleasesFragment mFragmentOldRelease;
-//    private Button mCheckUpdate;
+    private Button mCheckUpdate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         PutStringPreferences(this,"version", Config.getRomInstalledVersion());
         this.mFragmentOldRelease = new GithubReleasesFragment().setTargetURL(Config.URL_OLD_RELEASES());
         updateFragment(this,mFragmentOldRelease,R.id.content_frame);
-/*        mCheckUpdate=(Button)findViewById(R.id.activity_main_check_for_update);
+        mCheckUpdate=(Button)findViewById(R.id.activity_main_check_for_update);
         mCheckUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        */
+
         PermissionRequest(this);
     }
 

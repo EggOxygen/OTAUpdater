@@ -77,12 +77,11 @@ public class GithubReleasesAdapter extends GithubAdapterIDEA
 				{
 					try {
 					fileName = release.getString("name");
-					fileId = release.getLong("id");
 					uri = Uri.parse(release.getString("browser_download_url"));
 					} catch (JSONException e) {
 						e.printStackTrace();
 					}
-					DownloadFileName=fileId + "-" + fileName;
+					DownloadFileName=fileName;
 
 					final File fileIns = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/" + DownloadFileName);
 					if (fileIns.isFile()){
