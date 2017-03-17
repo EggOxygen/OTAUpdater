@@ -31,6 +31,7 @@ import static io.github.otaupdater.otaupdater.util.Config.uri;
 /**
  * Created by: veli
  * Date: 10/25/16 10:13 PM
+ * Change By EggOxygen
  */
 
 public class GithubReleasesAdapter extends GithubAdapterIDEA
@@ -108,7 +109,7 @@ public class GithubReleasesAdapter extends GithubAdapterIDEA
 							}
 						});
 					}else {
-						DownloaderDialog.setTitle("Download ?")
+						DownloaderDialog.setTitle("Download")
 								.setHeaderBackground(R.color.colorPrimaryDark)
 								.setMessage(DownloadFileName)
 								.setPositive("Download", new View.OnClickListener() {
@@ -125,8 +126,8 @@ public class GithubReleasesAdapter extends GithubAdapterIDEA
 										DownloaderDialog.dismiss();
 									}
 								})
-								.isCancelable(false)
-								.withAnimation(Animation.SIDE);
+								.isCancelable(false);
+								// .withAnimation(Animation.SIDE);
 						DownloaderDialog.show();
 
 
@@ -146,8 +147,9 @@ public class GithubReleasesAdapter extends GithubAdapterIDEA
 					StableText.setVisibility(View.VISIBLE);
 				}
 			}
-			if (release.has("tag_name"))
-				text1.setText(release.getString("tag_name"));
+
+			 if (release.has("tag_name"))
+				 text1.setText(release.getString("tag_name"));
 
 			if (release.has("body"))
 				text2.setText(release.getString("body"));
@@ -158,7 +160,7 @@ public class GithubReleasesAdapter extends GithubAdapterIDEA
 				oldRomText.setVisibility(View.GONE);
 			}
 			else {
-				oldRomText.setText("Old");
+				oldRomText.setText("Old Build");
 				oldRomText.setVisibility(View.VISIBLE);
 			}
 

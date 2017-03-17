@@ -20,4 +20,7 @@
     <string name="clog">Changelog</string>
     <string name="dismiss">DISMISS</string>
     <string name="flash_bt">Flash</string>
+    <string name="download_now">Download Now</string>
+    <string name="changelog_release">Changelog</string>
+    <string name="download_old_up">Download and Install</string>
 </resources>

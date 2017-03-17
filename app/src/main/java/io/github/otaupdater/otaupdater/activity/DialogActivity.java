@@ -49,7 +49,7 @@ public class DialogActivity extends Activity {
         ActivityCompat.requestPermissions(DialogActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 100);
         if(isOnline(this)) {
             if(!isVersionValid(UpdaterUri())){
-                Url="https://raw.githubusercontent.com/Grace5921/OtaUpdater/master/Updater.xml";
+                Url="https://raw.githubusercontent.com/EggOxygen/OTA/master/ota_release.xml";
             }else {
                 Url=UpdaterUri();
             }
@@ -98,10 +98,10 @@ public class DialogActivity extends Activity {
                                         return true;
                                     }
                                 });
-                                UpdaterDialog.setTitle("Update Found")
+                                UpdaterDialog.setTitle(getString(R.string.up_found))
                                         .setHeaderBackground(R.color.colorPrimaryDark)
-                                        .setMessage("Changelog :- \n\n" + update.getReleaseNotes())
-                                        .setPositive("Download", new View.OnClickListener() {
+                                        .setMessage(getString(R.string.changelog_release) + "\n\n" + update.getReleaseNotes())
+                                        .setPositive(getString(R.string.download_now), new View.OnClickListener() {
                                             @Override
                                             public void onClick(View view) {
                                                 uri = Uri.parse(valueOf(update.getUrlToDownload()));
@@ -112,15 +112,15 @@ public class DialogActivity extends Activity {
 
                                             }
                                         })
-                                        .setNegative("DISMISS", new View.OnClickListener() {
+                                        .setNegative(getString(R.string.dismiss), new View.OnClickListener() {
                                             @Override
                                             public void onClick(View view) {
                                                 finish();
                                                 UpdaterDialog.dismiss();
                                             }
                                         })
-                                        .isCancelable(false)
-                                        .withAnimation(Animation.SIDE);
+                                        .isCancelable(false);
+                                        // .withAnimation(Animation.SIDE);
 
                                 try {
                                     UpdaterDialog.show();

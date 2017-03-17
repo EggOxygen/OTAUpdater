@@ -21,4 +21,7 @@
     <string name="clog">更新日志</string>
     <string name="dismiss">忽略</string>
     <string name="flash_bt">确认刷入</string>
+    <string name="download_now">立即下载</string>
+    <string name="changelog_release">更新日志</string>
+    <string name="download_old_up">下载并安装此版本</string>
 </resources>
