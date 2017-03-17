@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">蛋升级</string>
+    <string name="check_for_update_now">立刻检查更新</string>
+    <string name="choose_app_to_open">用什么打开?</string>
+    <string name="connecting_to_github">检查更新中</string>
+    <string name="download">下载</string>
+    <string name="install">安装</string>
+    <string name="last_check">上一个更新版本</string>
+    <string name="latest_release">最新版本</string>
+    <string name="no_network_available">无可用网络</string>
+    <string name="nothing_to_show">此处无用</string>
+    <string name="previous_releases">上一个版本</string>
+    <string name="refresh">刷新</string>
+    <string name="something_went_wrong">看来有些地方出错了 别更新了睡觉吧</string>
+    <string name="title_activity_main2"></string>
+    <string name="sure_flash">确定要刷入此升级包吗?</string>
+</resources>

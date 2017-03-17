@@ -45,10 +45,12 @@
         android:layout_below="@+id/wipe_cache"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="133dp"
-        android:id="@+id/flash_button"/>
+        android:id="@+id/flash_button"
+        android:elevation="0dp"
+        android:textStyle="normal|bold" />
 
     <TextView
-        android:text="Are you sure you want to flash this :- \n "
+        android:text="@string/sure_flash"
         android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
